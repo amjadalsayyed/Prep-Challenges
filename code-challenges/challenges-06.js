@@ -56,6 +56,7 @@ const sumNums = (arr) => {
 // Output: ['Python','Ruby','JS','C#']
 
 const reverseArray = (arr) => {
+  // arr.reverse( ) // i can use this to
   let arr2 = [];
   for (let i = 0; i < arr.length; i++) {
     arr2.unshift(arr[i]);
