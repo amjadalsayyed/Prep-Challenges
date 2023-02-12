@@ -122,7 +122,44 @@ const cvFormatter = (arr) => {
 //  Note that:
 //  1- rejectedApplicants are applications that has both the names empty or null and whoever have one year or less of Experience
 
-const applicationsStatics = (arr) => {};
+const applicationsStatics = (arr) => {
+  let result = {
+    python_devs: 0,
+    javaScript_devs: 0,
+    dotNet_devs: 0,
+    java_devs: 0,
+    totalApplicants: arr.length,
+    rejectedApplicants: 0,
+  };
+  for (let i = 0; i < arr.length; i++) {
+    if (
+      arr[i].yearsOfExperience <= 1 ||
+      (arr[i].firstName === "null" && arr[i].lastName === "null") ||
+      (arr[i].firstName === "" && arr[i].lastName === "")
+    ) {
+      result.rejectedApplicants += 1;
+    } else {
+      switch (arr[i].tech) {
+        case "Python":
+          result.python_devs += 1;
+          break;
+        case "JS":
+          result.javaScript_devs += 1;
+          break;
+        case ".Net":
+          result.dotNet_devs += 1;
+          break;
+        case "Java":
+          result.java_devs += 1;
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+  return result;
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
