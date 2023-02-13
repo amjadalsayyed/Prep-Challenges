@@ -129,7 +129,7 @@ const getInfo = (arr) => {
 
 const getStudents = (arr) => {
   // write your code here
-  let output = arr.map((e) => {
+  let out = arr.map((e) => {
     let studentName = e;
     let course = "";
     for (let i = 0; i < courses.length; i++) {
@@ -140,7 +140,7 @@ const getStudents = (arr) => {
     }
     return { Student: studentName, course: course };
   });
-  return output;
+  return out;
 };
 //  ------------------------------------------------------------------------------------------------------
 
