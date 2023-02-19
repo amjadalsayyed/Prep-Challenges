@@ -1,0 +1,95 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": [],
+           " solution" : {
+                          function birthdayCakeCandles(candles) {
+                          // Write your code here
+                            let max = 0;
+                            for(let i =0 ; i < candles.length ; i++){
+                            if (candles[i] > max){
+                            max = candles[i]
+                             }
+                             }
+                            let res = candles.filter(e=> e=== max).length
+                            return res;
+                            }
+                         }
+        },
+     
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Compare The Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": [],
+            "solution":{
+                function compareTriplets(a, b) {
+                let alice = 0;
+                let bob =0 ;
+                for(let i = 0 ; i< 3; i++){
+                    if(a[i] > b[i]){
+                        alice += 1
+                    }else if (a[i] < b[i]){
+                        bob += 1
+                    }
+                }
+                return [alice,bob]
+                }
+            }
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
