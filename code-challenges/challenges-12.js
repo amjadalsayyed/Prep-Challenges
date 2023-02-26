@@ -72,7 +72,7 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
   // write your code here
-  let arr2 = arr.filter((i) => i.yearsOfExperience > 1 && i.tech === "JS");
+  let arr2 = arr.filter((i) => i.yearsOfExperience > 4 && i.tech === "JS");
   let arr3 = arr2.map((e) => {
     e = {
       fullName: e.firstName + (e.LastNamee !== null ? " " + e.LastName : ""),
