@@ -60,12 +60,10 @@ const objectCounter = (arr) => {
 // ------------------------
 
 const stringReverse = (str) => {
-  let result = str
+  return str
     .split(" ")
     .reduce((acc, curr) => (acc = curr + " " + acc), "")
     .trim();
-
-  return result;
   // write your code here
 };
 // -------------------------------------------------------------------------------------------------------
@@ -109,17 +107,30 @@ const stringReverse = (str) => {
 // };
 //
 
-const statistics = (a) => {
-  let obj = {};
+// const statistics = (a) => {
+//   let obj = {};
 
-  for (var i = 0; i < a.length; i++) {
-    if (!obj[a[i].votes_To]) {
-      obj[a[i].votes_To] = 1;
+//   for (var i = 0; i < a.length; i++) {
+//     if (!obj[a[i].votes_To]) {
+//       obj[a[i].votes_To] = 1;
+//     } else {
+//       obj[a[i].votes_To]++;
+//     }
+//   }
+//   return obj;
+// };
+
+const statistics = (arr) => {
+  // write your code here
+
+  return arr.reduce((acc, curr) => {
+    if (!acc[curr.votes_To]) {
+      acc[curr.votes_To] = 1;
     } else {
-      obj[a[i].votes_To]++;
+      acc[curr.votes_To] += 1;
     }
-  }
-  return obj;
+    return acc;
+  }, {});
 };
 
 // -------------------------------------------------------------------------------------------------------
