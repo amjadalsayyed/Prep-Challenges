@@ -75,7 +75,7 @@ const cvsFiltration = (arr) => {
   let arr2 = arr.filter((i) => i.yearsOfExperience > 4 && i.tech === "JS");
   let arr3 = arr2.map((e) => {
     e = {
-      fullName: e.firstName + (e.LastNamee !== null ? " " + e.LastName : ""),
+      fullName: e.firstName + (e.LastName !== null ? " " + e.LastName : ""),
       tech: e.tech,
     };
     return e;
