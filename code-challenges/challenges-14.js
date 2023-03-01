@@ -40,9 +40,8 @@ const LastWord = (str) => {
 
 const LastWord_2 = (str) => {
   // write your code here
-  //   let arr = str.split(" ");
-  //   return arr[arr.length - 1];
-  return str.split(" ")[str.split(" ").length - 1]; //*** I JUST LIKE THE ONE LINER :) THE OTHER SOLUTION IS COMENTED ABOVE THIS LINE SRY :) */
+
+  return str.split(" ").slice(-1).toString();
 };
 // -------------------------------------------------------------------------------------------------------
 
