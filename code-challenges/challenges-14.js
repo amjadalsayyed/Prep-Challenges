@@ -131,7 +131,7 @@ const arrToStr = (arr) => {
 
 const letterCounter = (str) => {
   // write your code here
-  //
+  // WILL SOLVE IT LATER :)
 };
 // -------------------------------------------------------------------------------------------------------
 
