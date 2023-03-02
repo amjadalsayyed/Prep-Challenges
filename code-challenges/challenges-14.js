@@ -118,19 +118,34 @@ const arrToStr = (arr) => {
 // Simon got a string manipulation question for his interview,
 // it asked him to replace the duplicated letters in a string to an indicator and counter
 // as in the example:
-//
+
 // Input:"aaaa bbb sdf"
 // Output: "a4 b3 s1d1f1"
-//
-// Input:"door"
-// Output: "d1o2r1"
-//
+
+// Input:"Good morning"
+// Output: "G1o2d1 m1o1r1n1i1n1g1"
+
 // help him by writing the function
 //
 
 const letterCounter = (str) => {
   // write your code here
   // WILL SOLVE IT LATER :)
+  let result = "";
+  let count = 1;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      result += " ";
+    } else if (str[i] === str[i + 1]) {
+      count++;
+    } else {
+      result += str[i] + count;
+      count = 1;
+    }
+  }
+
+  return result;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -142,11 +157,21 @@ module.exports = {
   letterCounter,
 };
 
-//  const obj = str.split('').reduce((acc, cur) => {
-// //     if (!acc[cur]) {
-// //       acc[cur] = 1;
-// //     } else {
-// //       acc[cur] += 1;
-// //     }
-// //     return acc;
-// //   }, {});
+//  let obj = {};
+// let result = "";
+// for (var i = 0; i < str.length; i++) {
+//   if (str[i] === " ") {
+//     result = result + " " + Object.entries(obj).flat(1).join("");
+//     obj = {};
+//   } else if (!obj[str[i]]) {
+//     obj[str[i]] = 1;
+//   } else {
+//     obj[str[i]]++;
+//   }
+// }
+// if (str.indexOf(" ") === -1) {
+//   return Object.entries(obj).flat(1).join("");
+// } else {
+//   result = result + " " + Object.entries(obj).flat(1).join("");
+//   return result.trim();
+// }
