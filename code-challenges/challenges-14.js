@@ -159,7 +159,7 @@ module.exports = {
 
 //  let obj = {};
 // let result = "";
-// for (var i = 0; i < str.length; i++) {
+// for (let i = 0; i < str.length; i++) {
 //   if (str[i] === " ") {
 //     result = result + " " + Object.entries(obj).flat(1).join("");
 //     obj = {};
