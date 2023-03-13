@@ -16,7 +16,7 @@
 
 const recursionPattern = (int1, int2, arr = []) => {
   // write your code here
-  //   let arr = [];
+  // let arr = [];
   arr.push(int1);
   if (int1 < 0) {
     let arr2 = [...arr, ...arr.reverse().slice(1)];
@@ -26,7 +26,6 @@ const recursionPattern = (int1, int2, arr = []) => {
   }
 };
 // -------------------------------------------------------------------------------------------------------
-
 // -------------------------------------------------------------------------------------------------------
 // Challenge 02:
 // Required:
@@ -60,7 +59,7 @@ const filterLinks = (str) => {
 // and removing all non-alphanumeric characters, it reads the same forward and backward.
 // Alphanumeric characters include letters and numbers.
 // Given a string s, return true if it is a palindrome, or false otherwise.
-//
+
 // Input: s = "A man, a plan, a canal: Panama"
 // Output: true
 // as you can see "amanaplanacanalpanama" is a palindrome.
